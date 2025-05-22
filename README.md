@@ -1,59 +1,85 @@
-# WebServices
+# 🕸️ PRÁCTICA WEB SERVICES
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+## 👤 Desarrollado por  
+**Velazco, Nicolás**
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎯 Objetivo  
+Poner en práctica los conceptos de:  
+- 🌐 Web Service  
+- 📡 APIs disponibles en la web  
+- 🏗️ Aplicación de la Arquitectura REST  
+- 🧪 Testeo de APIs con Postman  
+- ⚛️ Implementación en Angular
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Tecnologías utilizadas  
+- **Angular** (Framework frontend para desarrollo SPA)  
+- **TypeScript** (Lenguaje principal de Angular)  
+- **Bootstrap** (Framework CSS para diseño responsivo y modales)  
+- **Postman** (Herramienta para testeo de APIs)  
+- **APIs REST externas** (RapidAPI, APILayer, Gemini, Google AI Studio)  
+- **Git** (Control de versiones)
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📜 Enunciado  
+Utilizar los repositorios:  
+- [https://rapidapi.com](https://rapidapi.com)  
+- [https://apilayer.com/marketplace](https://apilayer.com/marketplace)  
 
-```bash
-ng generate component component-name
-```
+para aplicar APIs que provean datos para las siguientes plantillas.  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Se debe aplicar un Service de Angular que consuma los Web Services.  
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 📂 Componentes y funcionalidades
 
-To build the project run:
+### 📰 A. Portal de Noticias  
+- Consumir una API que provea noticias relevantes (internacionales, nacionales, deportivas, financieras, generales, etc.).  
+- Mostrar las noticias en la plantilla correspondiente con título, descripción e imagen.  
+- API de referencia sugerida:  
+  [Livescore6 - GET news/v2/list](https://rapidapi.com/apidojo/api/livescore6)
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 🚗 B. Card Maker  
+- Consultar un servicio web que provea la lista de marcas de autos (ej.: Renault, Ford, etc.).  
+- Al hacer clic en una marca, mostrar en un modal (Bootstrap) los modelos correspondientes.  
+- Implementar un solo componente para evitar consultas repetidas y llegar al límite del plan gratuito.  
+- API sugerida:  
+  [Car Specs](https://rapidapi.com/alekivanovski96-O1vKHrFskQm/api/car-specs)
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 💱 C. Conversor de Monedas  
+- Consumir una API que permita convertir montos entre diferentes monedas.  
+- API de referencia:  
+  [Currency Data API](https://apilayer.com/marketplace/currency_data-api) (requiere registro para obtener API key).  
+- Implementar cajas de texto para moneda origen y destino.  
+- Listas desplegables para seleccionar moneda origen y destino, pobladas mediante un Web Service.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+### 🖼️ D. Generador de Imagen  
+- Al hacer clic en "Generar imagen..." generar una imagen asociada al título del post que se quiere publicar en Facebook.  
+- Utilizar la API de Gemini.  
+- Gestionar una API key en Google AI Studio para la aplicación.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+### 🔎 E. API a elección  
+- Consumir una API de interés para aplicar en un futuro proyecto final.  
+- Implementar frontend/formulario para captura de datos y mostrar el resultado del Web Service.  
+- Ejemplos de APIs:  
+  - Generador de código QR (string en base-64 para `<img src="...">`)  
+  - Traducción de texto a audio  
+  - Traducción de audio a texto  
+  - Clima de una ciudad o punto cardinal  
+  - Búsqueda musical con URL para audio  
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
