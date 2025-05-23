@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap ");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap ");
+/* Estilo general del footer */
+.footer {
+  background-color: black;
+  color: white;
+  font-family: "Bangers", sans-serif;
+  padding: 0;
+}
+
+/* Título principal */
+.footer-title {
+  font-family: "Monoton", sans-serif;
+  font-size: 24px;
+  color: #ffd700;
+}
+
+/* Descripción breve */
+.footer-description {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Subtítulos */
+.footer-subtitle {
+  font-family: "Monoton", sans-serif;
+  font-size: 18px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* Lista de contacto */
+.footer-contact li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-contact i {
+  color: #ffd700;
+}
+
+/* Enlaces de productos */
+.footer-links li {
+  margin-bottom: 1px;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+/* Línea divisora personalizada */
+.footer-divider {
+  border-top: 1px solid #ffd700;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Copyright */
+.footer-copyright {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.footer-designed {
+  font-size: 14px;
+  color: #ffd700;
+  font-style: italic;
+}
