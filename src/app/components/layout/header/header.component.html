@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg encabezado">
+  <div class="container-fluid">
+    <!-- Botón Hamburguesa -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Logo -->
+    <div class="col-md-3 align-items-center justify-content-center text-center">
+      <a class="navbar-brand logo" routerLing="/noticias">Sara Mercado</a>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <div
+      class="collapse navbar-collapse align-items-center justify-content-center col-md-6 text-center"
+      id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link enlace" aria-current="page" routerLink="/noticias">
+            <i class="fas fa-newspaper me-2"></i> Noticias
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link enlace" routerLink="/car-maker">
+            <i class="fas fa-car me-2"></i> Car Maker
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link enlace" routerLink="/conversor">
+            <i class="fas fa-coins me-2"></i> Conversor Divisa
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link enlace" routerLink="/generador-imagen">
+            <i class="fas fa-image me-2"></i> Generador Imagen
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link enlace" routerLink="/generar-qr">
+            <i class="fas fa-qrcode me-2"></i> Generar QR
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Iconos de redes sociales -->
+    <div
+      class="d-flex align-items-center justify-content-center flex-grow-1 col-md-3"
+    >
+      <a href="#" class="redes-sociales text-white mx-2">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="#" class="redes-sociales text-white mx-2">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+      <a href="#" class="redes-sociales text-white mx-2">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</nav>

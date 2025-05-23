@@ -1,0 +1,123 @@
+/** Importación de fuentes **/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap ");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap ");
+
+/** Fondo Header **/
+.encabezado {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/** Estilo Logo **/
+.logo {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+  color: #ff4d4d; /* Rojo claro */
+  transform: scale(1.1); /* Se agranda un poco */
+}
+
+/** Estilo Enlaces **/
+.enlace {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.enlace:hover {
+  color: #ffd700; /* Dorado */
+  text-decoration: none;
+}
+
+.enlace::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.enlace:hover::after {
+  width: 100%;
+}
+
+/** Menú desplegable Turismo (mantiene estilo hover) **/
+.dropdown-menu.turismo {
+  background-color: black;
+  border: none;
+}
+
+.dropdown-menu.turismo .dropdown-item.enlace {
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu.turismo .dropdown-item.enlace:hover {
+  color: #ffd700 !important;
+  background-color: transparent;
+}
+
+/** Estado activo del dropdown "Turismo" **/
+.nav-link.dropdown-toggle.active,
+.nav-link.dropdown-toggle:active,
+.nav-link.dropdown-toggle.show {
+  color: #ffd700 !important;
+  background-color: transparent !important;
+}
+
+/** Elimina la flecha por defecto de Bootstrap **/
+.navbar-nav .nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+/** Flecha personalizada como SVG dentro del link **/
+.navbar-nav .nav-link.dropdown-toggle {
+  position: relative;
+  padding-right: 1.5em; /* espacio para la flecha */
+}
+
+.custom-caret {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%);
+  width: 0.6em;
+  height: 0.6em;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='none' stroke='%23ffd700' stroke-width='1' d='M1 3l4 4 4-4'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  content: "";
+}
+
+/** Iconos de redes sociales con hover **/
+.redes-sociales i {
+  transition: color 0.3s ease;
+}
+
+.redes-sociales:hover i,
+.redes-sociales:focus i {
+  color: #ffd700 !important;
+}
+
+/** Botón hamburguesa personalizado **/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
